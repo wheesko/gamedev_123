@@ -22,7 +22,7 @@ public class DoorContoller : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Debug.Log("Player has triggered the door");
-            Door.transform.position += new Vector3(0f, 4f, 0f);
+            Door.transform.position += new Vector3(0f, -3.9f, 0f);
         }
     }
     
@@ -31,7 +31,7 @@ public class DoorContoller : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player has triggered the door close");
-            Door.transform.position -= new Vector3(0f, 4f, 0f);
+            Door.transform.position += new Vector3(0f, 3.9f, 0f);
             // Door.transform.position = Vector3.Lerp(Door.transform.position, Door.transform.position + new Vector3(0f, -40f, 0f), Time.deltaTime * 1f);
         }
     }
