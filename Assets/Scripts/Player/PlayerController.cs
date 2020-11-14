@@ -49,7 +49,9 @@ public class PlayerController : MonoBehaviour
     public float friction = 6; //Ground friction
 
     /* Movement stuff */
+    public float defaultMoveSpeed = 7.0f;         // Ground move speed
     public float moveSpeed = 7.0f;                // Ground move speed
+    public float crouchSpeed = 3.5f;              // Ground crouch speed
     public float runAcceleration = 14.0f;         // Ground accel
     public float runDeacceleration = 10.0f;       // Deacceleration that occurs when running on the ground
     public float airAcceleration = 2.0f;          // Air accel
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
     public float sideStrafeSpeed = 1.0f;          // What the max speed to generate when side strafing
     public float jumpSpeed = 8.0f;                // The speed at which the character's up axis gains when hitting jump
     public bool holdJumpToBhop = false;           // When enabled allows player to just hold jump button to keep on bhopping perfectly. Beware: smells like casual.
+    public LayerMask layerMask;
 
     /*print() style */
     public GUIStyle style;
@@ -89,6 +92,12 @@ public class PlayerController : MonoBehaviour
     // Player commands, stores wish commands that the player asks for (Forward, back, jump, etc)
     private Cmd _cmd;
 
+    private float height;
+    private bool isCrouched;
+    private bool isSliding;
+    private bool isJumping;
+    private bool haveSlided;
+
     private void Start()
     {
         // Hide the cursor
@@ -109,11 +118,14 @@ public class PlayerController : MonoBehaviour
             transform.position.z);
 
         _controller = GetComponent<CharacterController>();
+
+        height = _controller.height;
     }
 
     private void Update()
     {
         // Do FPS calculation
+
         frameCount++;
         dt += Time.deltaTime;
         if (dt > 1.0 / fpsDisplayRate)
@@ -142,9 +154,8 @@ public class PlayerController : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(0, rotY, 0); // Rotates the collider
         playerView.rotation = Quaternion.Euler(rotX, rotY, 0); // Rotates the camera
 
-
-
         /* Movement, here's the important part */
+        Crouch();
         QueueJump();
         if (_controller.isGrounded)
             GroundMove();
@@ -153,6 +164,13 @@ public class PlayerController : MonoBehaviour
 
         // Move the controller
         _controller.Move(playerVelocity * Time.deltaTime);
+
+        if ((playerVelocity.x != 0 || playerVelocity.z != 0) && OnSlope())
+        {
+            _controller.Move(Vector3.down * _controller.height / 2 * 20 * Time.deltaTime);
+        }
+
+        if (_controller.isGrounded) isJumping = false;
 
         /* Calculate top velocity */
         Vector3 udp = playerVelocity;
@@ -181,6 +199,92 @@ public class PlayerController : MonoBehaviour
         _cmd.rightMove = Input.GetAxisRaw("Horizontal");
     }
 
+    private bool OnSlope()
+    {
+        if (isJumping)
+            return false;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, _controller.height / 2 * 5, layerMask))
+            if (hit.normal != Vector3.up)
+                return true;
+        return false;
+    }
+
+    private void Slide(Vector3 wishdir, float accel)
+    {
+        if (Input.GetKey(KeyCode.C) && isCrouched && !isSliding && playerVelocity.magnitude > 5)
+        {
+            isSliding = true;
+        }
+
+        if (isSliding)
+        {
+            if (OnSlope())
+            {
+                if (!IsSlopeDownhill())
+                {
+                    return;
+                }
+                ApplyFriction(0.0f);
+                Accelerate(wishdir, playerVelocity.magnitude * 10f, 0.05f);
+            }
+            else
+            {
+                ApplyFriction(0.1f);
+                if (!haveSlided)
+                {
+                    Accelerate(wishdir, moveSpeed * 7, moveSpeed * 7);
+                    haveSlided = true;
+                }
+
+                if (playerVelocity.magnitude <= 4.5f)
+                {
+                    isSliding = false;
+                }
+            }
+        }
+    }
+
+    private bool IsSlopeDownhill()
+    {
+        float slope = 0;
+        RaycastHit hit;
+        if (Physics.SphereCast(transform.position, .25f, Vector3.down, out hit, 3f))
+        {
+            slope = Vector3.Dot(transform.right, (Vector3.Cross(Vector3.up, hit.normal)));
+        }
+
+        if (slope < 0)
+        {
+            return false;
+        }
+        else return true;
+    }
+
+    private void Crouch()
+    {
+        var h = height;
+
+        if (Input.GetKey(KeyCode.C))
+        {
+            h = 0.5f * height;
+            isCrouched = true;
+            moveSpeed = crouchSpeed;
+        }
+        else if (Input.GetKeyUp(KeyCode.C))
+        {
+            isCrouched = false;
+            moveSpeed = defaultMoveSpeed;
+            isSliding = false;
+            haveSlided = false;
+            ApplyFriction(1.0f);
+        }
+
+        _controller.height = Mathf.Lerp(_controller.height, h, 10 * Time.deltaTime);
+    }
+
     /**
      * Queues the next jump just like in Q3
      */
@@ -193,9 +297,15 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetButtonDown("Jump") && !wishJump)
+        {
             wishJump = true;
+            isJumping = true;
+        }
+
         if (Input.GetButtonUp("Jump"))
+        {
             wishJump = false;
+        }
     }
 
     /**
@@ -206,7 +316,6 @@ public class PlayerController : MonoBehaviour
         Vector3 wishdir;
         float wishvel = airAcceleration;
         float accel;
-
         SetMovementDir();
 
         wishdir = new Vector3(_cmd.rightMove, 0, _cmd.forwardMove);
@@ -288,12 +397,16 @@ public class PlayerController : MonoBehaviour
     private void GroundMove()
     {
         Vector3 wishdir;
-
         // Do not apply friction if the player is queueing up the next jump
         if (!wishJump)
-            ApplyFriction(1.0f);
+        {
+            if (!isSliding)
+                ApplyFriction(1.0f);
+        }
         else
+        {
             ApplyFriction(0);
+        }
 
         SetMovementDir();
 
@@ -305,9 +418,11 @@ public class PlayerController : MonoBehaviour
         var wishspeed = wishdir.magnitude;
         wishspeed *= moveSpeed;
 
-        Accelerate(wishdir, wishspeed, runAcceleration);
-
-        // Reset the gravity velocity
+        Slide(wishdir, _controller.velocity.magnitude * 0.5f);
+        if (!isSliding)
+        {
+            Accelerate(wishdir, wishspeed, runAcceleration);
+        }
         playerVelocity.y = -gravity * Time.deltaTime;
 
         if (wishJump)
