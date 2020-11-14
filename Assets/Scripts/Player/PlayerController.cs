@@ -74,6 +74,9 @@ public class PlayerController : MonoBehaviour
 
     // Camera rotations
     private float rotX = 0.0f;
+
+    //Need to be able to modify this field as sometimes player will look into the wall on the level start
+    [SerializeField]
     private float rotY = 0.0f;
 
     private Vector3 moveDirectionNorm = Vector3.zero;
