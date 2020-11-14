@@ -6,39 +6,28 @@ public class ButtonController : MonoBehaviour
 {
     public Material EnabledMaterial;
     public Material DisabledMaterial;
-    private bool enabled = false;
+    private bool objectEnabled = false;
     public GameObject Button;
     public GameObject ControlledObject;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player has triggered the button");
-            if (enabled)
+            if (objectEnabled)
             {
                 Button.GetComponent<MeshRenderer>().material = DisabledMaterial;
-                enabled = false;
+                objectEnabled = false;
             }
             else
             {
                 Button.GetComponent<MeshRenderer>().material = EnabledMaterial;
-                enabled = true;
+                objectEnabled = true;
             }
 
-            ControlledObject.SetActive(enabled);
+            ControlledObject.SetActive(objectEnabled);
         }
     }
 }
