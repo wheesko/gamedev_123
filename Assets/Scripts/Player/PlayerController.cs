@@ -128,7 +128,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         // Do FPS calculation
-
         frameCount++;
         dt += Time.deltaTime;
         if (dt > 1.0 / fpsDisplayRate)
@@ -210,8 +209,10 @@ public class PlayerController : MonoBehaviour
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, _controller.height / 2 * 5, layerMask))
+        {
             if (hit.normal != Vector3.up)
                 return true;
+        }
         return false;
     }
 
