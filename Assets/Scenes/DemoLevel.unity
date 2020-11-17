@@ -24470,6 +24470,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 195680721}
     - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
+      propertyPath: crouchSpeed
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
       propertyPath: layerMask.m_Bits
       value: 1024
       objectReference: {fileID: 0}

@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     /* Movement stuff */
     public float defaultMoveSpeed = 7.0f;         // Ground move speed
     public float moveSpeed = 7.0f;                // Ground move speed
-    public float crouchSpeed = 3.5f;              // Ground crouch speed
+    public float crouchSpeed = 4.5f;              // Ground crouch speed
     public float runAcceleration = 14.0f;         // Ground accel
     public float runDeacceleration = 10.0f;       // Deacceleration that occurs when running on the ground
     public float airAcceleration = 2.0f;          // Air accel
@@ -218,7 +218,7 @@ public class PlayerController : MonoBehaviour
 
     private void Slide(Vector3 wishdir, float accel)
     {
-        if (Input.GetKey(KeyCode.C) && isCrouched && !isSliding && playerVelocity.magnitude > 5)
+        if (Input.GetKey(KeyCode.C) && isCrouched && !isSliding && playerVelocity.magnitude > 5 && !haveSlided)
         {
             isSliding = true;
         }
