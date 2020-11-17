@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     /* Movement stuff */
     public float defaultMoveSpeed = 7.0f;         // Ground move speed
     public float moveSpeed = 7.0f;                // Ground move speed
-    public float crouchSpeed = 3.5f;              // Ground crouch speed
+    public float crouchSpeed = 4.5f;              // Ground crouch speed
     public float runAcceleration = 14.0f;         // Ground accel
     public float runDeacceleration = 10.0f;       // Deacceleration that occurs when running on the ground
     public float airAcceleration = 2.0f;          // Air accel
@@ -77,6 +77,9 @@ public class PlayerController : MonoBehaviour
 
     // Camera rotations
     private float rotX = 0.0f;
+
+    //Need to be able to modify this field as sometimes player will look into the wall on the level start
+    [SerializeField]
     private float rotY = 0.0f;
 
     private Vector3 moveDirectionNorm = Vector3.zero;
@@ -125,7 +128,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         // Do FPS calculation
-
         frameCount++;
         dt += Time.deltaTime;
         if (dt > 1.0 / fpsDisplayRate)
@@ -207,14 +209,16 @@ public class PlayerController : MonoBehaviour
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, _controller.height / 2 * 5, layerMask))
+        {
             if (hit.normal != Vector3.up)
                 return true;
+        }
         return false;
     }
 
     private void Slide(Vector3 wishdir, float accel)
     {
-        if (Input.GetKey(KeyCode.C) && isCrouched && !isSliding && playerVelocity.magnitude > 5)
+        if (Input.GetKey(KeyCode.C) && isCrouched && !isSliding && playerVelocity.magnitude > 5 && !haveSlided)
         {
             isSliding = true;
         }
