@@ -1855,11 +1855,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc3259bfe88e9f347a6fcef7d5d77d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthText: {fileID: 7441606574476825721}
-  ammoText: {fileID: 515527958}
-  timeText: {fileID: 718333187}
-  enemiesText: {fileID: 842143182}
-  secretsText: {fileID: 466239905}
+  HealthText: {fileID: 7441606574476825721}
+  AmmoText: {fileID: 515527958}
+  TimeText: {fileID: 718333187}
+  EnemiesText: {fileID: 842143182}
+  SecretsText: {fileID: 466239905}
   GameOverPanel: {fileID: 1183832658}
   ScorePanel: {fileID: 1490634424}
   LevelCompletePanel: {fileID: 4312707430334338218}
