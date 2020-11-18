@@ -38,6 +38,15 @@ struct Cmd
 
 public class PlayerController : MonoBehaviour
 {
+    #region Singleton
+    public static PlayerController instance;
+    public void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+
+
     public Transform playerView;     // Camera
     public float playerViewYOffset = 0.6f; // The height at which the camera is bound to
     public float xMouseSensitivity = 30.0f;
@@ -101,6 +110,13 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool haveSlided;
 
+    [Header("Shooting Behavior")]
+    public Transform cameraTransform;
+    public Transform firePoint;
+    public GameObject shuriken;
+
+
+
     private void Start()
     {
         // Hide the cursor
@@ -142,6 +158,26 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
                 Cursor.lockState = CursorLockMode.Locked;
         }
+
+        //Implemeting Firing Stuff - Aurimas
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, 50f))
+            {
+                if (Vector3.Distance(cameraTransform.position, hit.point) > 2f)
+                {
+                    firePoint.LookAt(hit.point);
+                }
+            }
+            else
+            {
+                firePoint.LookAt(cameraTransform.position + (cameraTransform.forward * 50f));
+            }
+
+            FireShot();
+        }
+
 
         /* Camera rotation stuff, mouse controls this shit */
         rotX -= Input.GetAxisRaw("Mouse Y") * xMouseSensitivity * 0.02f;
@@ -186,6 +222,11 @@ public class PlayerController : MonoBehaviour
             transform.position.x,
             transform.position.y + playerViewYOffset,
             transform.position.z);
+    }
+
+    private void FireShot()
+    {
+        Instantiate(shuriken, firePoint.position, firePoint.rotation);
     }
 
     /*******************************************************************************************************\
