@@ -8,6 +8,7 @@ public class LevelEndTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            GameController.Instance.EndGame(true);
             Debug.Log($"The level is finished! \nTime: {LevelManager.LevelTime}" +
                 $"\nEnemies killed: " +
                 $"{LevelManager.KilledEnemyCount} " +

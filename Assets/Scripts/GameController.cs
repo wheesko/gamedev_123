@@ -28,7 +28,6 @@ public class GameController : MonoBehaviour
         {
             Destroy(this);
         }
-        DontDestroyOnLoad(gameObject);
     }
 
     public void Pause(bool shouldPause)
@@ -48,8 +47,11 @@ public class GameController : MonoBehaviour
 
     public void EndGame(bool isSuccess)
     {
+        if (!IsGameOver)
+        {
+            GameUIController.Instance.EndGame(isSuccess);
+        }
         IsGameOver = true;
-        // TODO execute anything related to gameover depending on the isSuccess value
     }
 
     // It's probably not the best approach ¯\_(ツ)_/¯
@@ -60,6 +62,16 @@ public class GameController : MonoBehaviour
         {
             SceneManager.LoadScene(nextLevelsDictionary[currentLevel]);
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }

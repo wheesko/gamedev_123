@@ -233,6 +233,8 @@ public class PlayerController : MonoBehaviour
         else
         {
             GameController.Instance.EndGame(false);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
         
     }
