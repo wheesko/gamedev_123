@@ -225,14 +225,24 @@ public class PlayerController : MonoBehaviour
 
         if (isSliding)
         {
-            if (OnSlope())
+            if (OnSlope() && IsSlopeDownhill())
             {
-                if (!IsSlopeDownhill())
-                {
-                    return;
-                }
                 ApplyFriction(0.0f);
                 Accelerate(wishdir, playerVelocity.magnitude * 10f, 0.05f);
+            }
+            else if(OnSlope() && !IsSlopeDownhill())
+            {
+                ApplyFriction(0.3f);
+                if (!haveSlided)
+                {
+                    Accelerate(wishdir, moveSpeed * 7, moveSpeed * 7);
+                    haveSlided = true;
+                }
+
+                if (playerVelocity.magnitude <= 4.5f)
+                {
+                    isSliding = false;
+                }
             }
             else
             {
@@ -260,11 +270,11 @@ public class PlayerController : MonoBehaviour
             slope = Vector3.Dot(transform.right, (Vector3.Cross(Vector3.up, hit.normal)));
         }
 
-        if (slope < 0)
+        if (slope > 0)
         {
-            return false;
+            return true;
         }
-        else return true;
+        else return false;
     }
 
     private void Crouch()
