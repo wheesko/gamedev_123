@@ -7,12 +7,12 @@ public class GameUIController : MonoBehaviour
 {
     public static GameUIController Instance { get; private set; }
 
-    public Text healthText;
-    public Text ammoText;
+    public Text HealthText;
+    public Text AmmoText;
 
-    public Text timeText;
-    public Text enemiesText;
-    public Text secretsText;
+    public Text TimeText;
+    public Text EnemiesText;
+    public Text SecretsText;
 
     public GameObject GameOverPanel;
     public GameObject ScorePanel;
@@ -34,19 +34,19 @@ public class GameUIController : MonoBehaviour
     public void SetHealthText(int health)
     {
         health = Mathf.Clamp(health, 0, 100);
-        healthText.text = $"{health}/100";
+        HealthText.text = $"{health}/100";
     }
 
     public void SetAmmo(int ammo)
     {
-        ammoText.text = ammo.ToString();
+        AmmoText.text = ammo.ToString();
     }
 
     public void EndGame(bool isSuccess)
     {
-        timeText.text = $"{Mathf.Round(LevelManager.LevelTime)} seconds";
-        enemiesText.text = $"{LevelManager.KilledEnemyCount}";
-        secretsText.text = $"{LevelManager.FoundSecretCount}";
+        TimeText.text = $"{Mathf.Round(LevelManager.LevelTime)} seconds";
+        EnemiesText.text = $"{LevelManager.KilledEnemyCount}";
+        SecretsText.text = $"{LevelManager.FoundSecretCount}";
 
         ScorePanel.SetActive(true);
 
