@@ -38,6 +38,15 @@ struct Cmd
 
 public class PlayerController : MonoBehaviour
 {
+    #region Singleton
+    public static PlayerController instance;
+    public void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+
+
     public Transform playerView;     // Camera
     public float playerViewYOffset = 0.6f; // The height at which the camera is bound to
     public float xMouseSensitivity = 30.0f;
@@ -47,6 +56,10 @@ public class PlayerController : MonoBehaviour
     public float gravity = 20.0f;
 
     public float friction = 6; //Ground friction
+
+    /* Health */
+
+    public int health = 100;
 
     /* Movement stuff */
     public float defaultMoveSpeed = 7.0f;         // Ground move speed
@@ -101,6 +114,13 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool haveSlided;
 
+    [Header("Shooting Behavior")]
+    public Transform cameraTransform;
+    public Transform firePoint;
+    public GameObject shuriken;
+
+
+
     private void Start()
     {
         // Hide the cursor
@@ -143,49 +163,97 @@ public class PlayerController : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
         }
 
-        /* Camera rotation stuff, mouse controls this shit */
-        rotX -= Input.GetAxisRaw("Mouse Y") * xMouseSensitivity * 0.02f;
-        rotY += Input.GetAxisRaw("Mouse X") * yMouseSensitivity * 0.02f;
-
-        // Clamp the X rotation
-        if (rotX < -90)
-            rotX = -90;
-        else if (rotX > 90)
-            rotX = 90;
-
-        this.transform.rotation = Quaternion.Euler(0, rotY, 0); // Rotates the collider
-        playerView.rotation = Quaternion.Euler(rotX, rotY, 0); // Rotates the camera
-
-        /* Movement, here's the important part */
-        Crouch();
-        QueueJump();
-        if (_controller.isGrounded)
-            GroundMove();
-        else if (!_controller.isGrounded)
-            AirMove();
-
-        // Move the controller
-        _controller.Move(playerVelocity * Time.deltaTime);
-
-        if ((playerVelocity.x != 0 || playerVelocity.z != 0) && OnSlope())
+        // Only allow controls if the game is not over
+        if (!GameController.Instance.IsGameOver && health > 0)
         {
-            _controller.Move(Vector3.down * _controller.height / 2 * 20 * Time.deltaTime);
+            //Implemeting Firing Stuff - Aurimas
+            if (Input.GetMouseButtonDown(0))
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, 50f))
+                {
+                    if (Vector3.Distance(cameraTransform.position, hit.point) > 2f)
+                    {
+                        firePoint.LookAt(hit.point);
+                    }
+                }
+                else
+                {
+                    firePoint.LookAt(cameraTransform.position + (cameraTransform.forward * 50f));
+                }
+
+                FireShot();
+            }
+
+
+            /* Camera rotation stuff, mouse controls this shit */
+            rotX -= Input.GetAxisRaw("Mouse Y") * xMouseSensitivity * 0.02f;
+            rotY += Input.GetAxisRaw("Mouse X") * yMouseSensitivity * 0.02f;
+
+            // Clamp the X rotation
+            if (rotX < -90)
+                rotX = -90;
+            else if (rotX > 90)
+                rotX = 90;
+
+            this.transform.rotation = Quaternion.Euler(0, rotY, 0); // Rotates the collider
+            playerView.rotation = Quaternion.Euler(rotX, rotY, 0); // Rotates the camera
+
+            /* Movement, here's the important part */
+            Crouch();
+            QueueJump();
+            if (_controller.isGrounded)
+                GroundMove();
+            else if (!_controller.isGrounded)
+                AirMove();
+
+            // Move the controller
+            _controller.Move(playerVelocity * Time.deltaTime);
+
+            if ((playerVelocity.x != 0 || playerVelocity.z != 0) && OnSlope())
+            {
+                _controller.Move(Vector3.down * _controller.height / 2 * 20 * Time.deltaTime);
+            }
+
+            if (_controller.isGrounded) isJumping = false;
+
+            /* Calculate top velocity */
+            Vector3 udp = playerVelocity;
+            udp.y = 0.0f;
+            if (udp.magnitude > playerTopVelocity)
+                playerTopVelocity = udp.magnitude;
+
+            //Need to move the camera after the player has been moved because otherwise the camera will clip the player if going fast enough and will always be 1 frame behind.
+            // Set the camera's position to the transform
+            playerView.position = new Vector3(
+                transform.position.x,
+                transform.position.y + playerViewYOffset,
+                transform.position.z);
         }
+        else
+        {
+            GameController.Instance.EndGame(false);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        
+    }
 
-        if (_controller.isGrounded) isJumping = false;
+    public void TakeDamage(int damage)
+    {
+        health = Mathf.Clamp(health - damage, 0, 100);
+        GameUIController.Instance.SetHealthText(health);
+    }
 
-        /* Calculate top velocity */
-        Vector3 udp = playerVelocity;
-        udp.y = 0.0f;
-        if (udp.magnitude > playerTopVelocity)
-            playerTopVelocity = udp.magnitude;
+    public void Heal(int healing)
+    {
+        health = Mathf.Clamp(health + healing, 0, 100);
+        GameUIController.Instance.SetHealthText(health);
+    }
 
-        //Need to move the camera after the player has been moved because otherwise the camera will clip the player if going fast enough and will always be 1 frame behind.
-        // Set the camera's position to the transform
-        playerView.position = new Vector3(
-            transform.position.x,
-            transform.position.y + playerViewYOffset,
-            transform.position.z);
+    private void FireShot()
+    {
+        Instantiate(shuriken, firePoint.position, firePoint.rotation);
     }
 
     /*******************************************************************************************************\

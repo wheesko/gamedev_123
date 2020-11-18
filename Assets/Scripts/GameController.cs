@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     // Maps the level with the upcoming one
     private Dictionary<string, string> nextLevelsDictionary = new Dictionary<string, string>()
     {
-        { "Level1", "Level2" }
+        { "DemoLevel", "Level1" }
     };
 
     void Awake()
@@ -28,7 +28,6 @@ public class GameController : MonoBehaviour
         {
             Destroy(this);
         }
-        DontDestroyOnLoad(gameObject);
     }
 
     public void Pause(bool shouldPause)
@@ -46,10 +45,13 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void EndGame()
+    public void EndGame(bool isSuccess)
     {
+        if (!IsGameOver)
+        {
+            GameUIController.Instance.EndGame(isSuccess);
+        }
         IsGameOver = true;
-        // TODO execute anything related to gameover
     }
 
     // It's probably not the best approach ¯\_(ツ)_/¯
@@ -60,6 +62,16 @@ public class GameController : MonoBehaviour
         {
             SceneManager.LoadScene(nextLevelsDictionary[currentLevel]);
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
