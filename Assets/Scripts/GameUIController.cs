@@ -8,6 +8,7 @@ public class GameUIController : MonoBehaviour
     public static GameUIController Instance { get; private set; }
 
     public Text healthText;
+    public Text ammoText;
 
     void Awake()
     {
@@ -27,5 +28,10 @@ public class GameUIController : MonoBehaviour
     {
         health = Mathf.Clamp(health, 0, 100);
         healthText.text = $"{health}/100";
+    }
+
+    public void SetAmmo(int ammo)
+    {
+        ammoText.text = ammo.ToString();
     }
 }

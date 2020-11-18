@@ -24,9 +24,11 @@ public class EnemyController : MonoBehaviour
     private float waitCounter;
 
     public float chaseRange;
-    public float attackRange = 1f;
+    public float attackRange = 5f;
     public float timeBetweenAttacks = 2f;
     private float attackCounter;
+
+    public int attackDamage = 25;
 
     void Start()
     {
@@ -36,6 +38,15 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, PlayerController.instance.transform.position);
+
+        // Temporarily duplicating this outside of the switch statement as we don't have animations
+        if (distanceToPlayer < attackRange && attackCounter < 0)
+        {
+            PlayerController.instance.TakeDamage(attackDamage);
+            attackCounter = timeBetweenAttacks;
+        }
+
+        attackCounter -= Time.deltaTime;
 
         switch (currentState)
         {

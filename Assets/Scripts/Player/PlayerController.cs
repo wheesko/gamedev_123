@@ -57,6 +57,10 @@ public class PlayerController : MonoBehaviour
 
     public float friction = 6; //Ground friction
 
+    /* Health */
+
+    public int health = 100;
+
     /* Movement stuff */
     public float defaultMoveSpeed = 7.0f;         // Ground move speed
     public float moveSpeed = 7.0f;                // Ground move speed
@@ -159,69 +163,90 @@ public class PlayerController : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
         }
 
-        //Implemeting Firing Stuff - Aurimas
-        if (Input.GetMouseButtonDown(0))
+        // Only allow controls if the game is not over
+        if (!GameController.Instance.IsGameOver && health > 0)
         {
-            RaycastHit hit;
-            if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, 50f))
+            //Implemeting Firing Stuff - Aurimas
+            if (Input.GetMouseButtonDown(0))
             {
-                if (Vector3.Distance(cameraTransform.position, hit.point) > 2f)
+                RaycastHit hit;
+                if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, 50f))
                 {
-                    firePoint.LookAt(hit.point);
+                    if (Vector3.Distance(cameraTransform.position, hit.point) > 2f)
+                    {
+                        firePoint.LookAt(hit.point);
+                    }
                 }
+                else
+                {
+                    firePoint.LookAt(cameraTransform.position + (cameraTransform.forward * 50f));
+                }
+
+                FireShot();
             }
-            else
+
+
+            /* Camera rotation stuff, mouse controls this shit */
+            rotX -= Input.GetAxisRaw("Mouse Y") * xMouseSensitivity * 0.02f;
+            rotY += Input.GetAxisRaw("Mouse X") * yMouseSensitivity * 0.02f;
+
+            // Clamp the X rotation
+            if (rotX < -90)
+                rotX = -90;
+            else if (rotX > 90)
+                rotX = 90;
+
+            this.transform.rotation = Quaternion.Euler(0, rotY, 0); // Rotates the collider
+            playerView.rotation = Quaternion.Euler(rotX, rotY, 0); // Rotates the camera
+
+            /* Movement, here's the important part */
+            Crouch();
+            QueueJump();
+            if (_controller.isGrounded)
+                GroundMove();
+            else if (!_controller.isGrounded)
+                AirMove();
+
+            // Move the controller
+            _controller.Move(playerVelocity * Time.deltaTime);
+
+            if ((playerVelocity.x != 0 || playerVelocity.z != 0) && OnSlope())
             {
-                firePoint.LookAt(cameraTransform.position + (cameraTransform.forward * 50f));
+                _controller.Move(Vector3.down * _controller.height / 2 * 20 * Time.deltaTime);
             }
 
-            FireShot();
+            if (_controller.isGrounded) isJumping = false;
+
+            /* Calculate top velocity */
+            Vector3 udp = playerVelocity;
+            udp.y = 0.0f;
+            if (udp.magnitude > playerTopVelocity)
+                playerTopVelocity = udp.magnitude;
+
+            //Need to move the camera after the player has been moved because otherwise the camera will clip the player if going fast enough and will always be 1 frame behind.
+            // Set the camera's position to the transform
+            playerView.position = new Vector3(
+                transform.position.x,
+                transform.position.y + playerViewYOffset,
+                transform.position.z);
         }
-
-
-        /* Camera rotation stuff, mouse controls this shit */
-        rotX -= Input.GetAxisRaw("Mouse Y") * xMouseSensitivity * 0.02f;
-        rotY += Input.GetAxisRaw("Mouse X") * yMouseSensitivity * 0.02f;
-
-        // Clamp the X rotation
-        if (rotX < -90)
-            rotX = -90;
-        else if (rotX > 90)
-            rotX = 90;
-
-        this.transform.rotation = Quaternion.Euler(0, rotY, 0); // Rotates the collider
-        playerView.rotation = Quaternion.Euler(rotX, rotY, 0); // Rotates the camera
-
-        /* Movement, here's the important part */
-        Crouch();
-        QueueJump();
-        if (_controller.isGrounded)
-            GroundMove();
-        else if (!_controller.isGrounded)
-            AirMove();
-
-        // Move the controller
-        _controller.Move(playerVelocity * Time.deltaTime);
-
-        if ((playerVelocity.x != 0 || playerVelocity.z != 0) && OnSlope())
+        else
         {
-            _controller.Move(Vector3.down * _controller.height / 2 * 20 * Time.deltaTime);
+            GameController.Instance.EndGame(false);
         }
+        
+    }
 
-        if (_controller.isGrounded) isJumping = false;
+    public void TakeDamage(int damage)
+    {
+        health = Mathf.Clamp(health - damage, 0, 100);
+        GameUIController.Instance.SetHealthText(health);
+    }
 
-        /* Calculate top velocity */
-        Vector3 udp = playerVelocity;
-        udp.y = 0.0f;
-        if (udp.magnitude > playerTopVelocity)
-            playerTopVelocity = udp.magnitude;
-
-        //Need to move the camera after the player has been moved because otherwise the camera will clip the player if going fast enough and will always be 1 frame behind.
-        // Set the camera's position to the transform
-        playerView.position = new Vector3(
-            transform.position.x,
-            transform.position.y + playerViewYOffset,
-            transform.position.z);
+    public void Heal(int healing)
+    {
+        health = Mathf.Clamp(health + healing, 0, 100);
+        GameUIController.Instance.SetHealthText(health);
     }
 
     private void FireShot()

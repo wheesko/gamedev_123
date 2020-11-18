@@ -197,8 +197,9 @@ MonoBehaviour:
   currentState: 0
   waitAtPoint: 0
   chaseRange: 15
-  attackRange: 0.5
+  attackRange: 5
   timeBetweenAttacks: 2
+  attackDamage: 25
 --- !u!195 &1813559543
 NavMeshAgent:
   m_ObjectHideFlags: 0

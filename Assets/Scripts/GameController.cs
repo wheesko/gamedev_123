@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     // Maps the level with the upcoming one
     private Dictionary<string, string> nextLevelsDictionary = new Dictionary<string, string>()
     {
-        { "Level1", "Level2" }
+        { "DemoLevel", "Level1" }
     };
 
     void Awake()
@@ -46,10 +46,10 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void EndGame()
+    public void EndGame(bool isSuccess)
     {
         IsGameOver = true;
-        // TODO execute anything related to gameover
+        // TODO execute anything related to gameover depending on the isSuccess value
     }
 
     // It's probably not the best approach ¯\_(ツ)_/¯

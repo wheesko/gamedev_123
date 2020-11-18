@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
 
-    public static string firstSceneName = "Level1";
+    public static string firstSceneName = "DemoLevel";
 
     public static void Continue()
     {
