@@ -8,7 +8,7 @@ public class LevelEndTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            var aliveEnemyCount = GameObject.FindGameObjectsWithTag("Secret").Length;
+            var aliveEnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
             LevelManager.KilledEnemyCount = LevelManager.EnemyCount - aliveEnemyCount;
             GameController.Instance.EndGame(true);
             Debug.Log($"The level is finished! \nTime: {LevelManager.LevelTime}" +
