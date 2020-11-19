@@ -14,10 +14,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameObject levelEndSlipgate;
 
-    private float levelStartTime;
 
-    public int SecretCount;
-    public int EnemyCount;
+    private float levelStartTime;
+    public static int SecretCount;
+    public static int EnemyCount;
     public static int FoundSecretCount;
     public static int KilledEnemyCount;
     public static float LevelTime;

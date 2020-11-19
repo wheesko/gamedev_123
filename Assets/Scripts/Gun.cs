@@ -35,6 +35,6 @@ public class Gun : MonoBehaviour
     public void GetAmmo()
     {
         currentAmmo += pickupAmount;
-        //UIController.instance.ammoText.text = "Ammo: " + currentAmmo;
+        GameUIController.Instance.SetAmmo(currentAmmo);
     }
 }
