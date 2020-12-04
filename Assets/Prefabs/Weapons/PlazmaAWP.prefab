@@ -114,7 +114,7 @@ MonoBehaviour:
   Bullet: {fileID: 5356034177990914937, guid: e09b5e30a9d509c4f97ffeabf4cf0562, type: 3}
   ColissionEffect: {fileID: 8146216248221775942, guid: 2323b8699fec9f849924cab936f17278, type: 3}
   Damage: 1
-  fireRate: 0.5
+  fireRate: 1.5
 --- !u!1 &6635203258931435947
 GameObject:
   m_ObjectHideFlags: 0
