@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LevelEndTrigger : MonoBehaviour
 {
@@ -11,6 +9,7 @@ public class LevelEndTrigger : MonoBehaviour
             var aliveEnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
             LevelManager.KilledEnemyCount = LevelManager.EnemyCount - aliveEnemyCount;
             GameController.Instance.EndGame(true);
+            MusicController.Instance.Play(MusicController.MusicType.LevelEnd);
             Debug.Log($"The level is finished! \nTime: {LevelManager.LevelTime}" +
                 $"\nEnemies killed: " +
                 $"{LevelManager.KilledEnemyCount} " +

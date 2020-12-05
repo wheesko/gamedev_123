@@ -13,7 +13,7 @@ public class PlayFightTheme : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player entered area to play music");
-            musicController.GetComponent<MusicController>().Play(MusicController.MusicType.FIGHT);
+            musicController.GetComponent<MusicController>().Play(MusicController.MusicType.Fight);
         }
     }
 }

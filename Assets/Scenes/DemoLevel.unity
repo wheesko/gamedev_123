@@ -6355,102 +6355,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2687880596028676670, guid: ced08cb4518c894459ce717861cd622f, type: 3}
   m_PrefabInstance: {fileID: 1186344913}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &19551895
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19551894}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 66c6cb9b4b8fc1248be469f6adb5b0e9, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &81588206
 GameObject:
   m_ObjectHideFlags: 0
@@ -25172,6 +25076,10 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
       propertyPath: shuriken
       value: 
       objectReference: {fileID: 7180058923930795300, guid: 98c526f4532c4604ea454c9527bbe885, type: 3}
@@ -25271,7 +25179,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15022
+  m_Name: pb_Mesh28190
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26651,10 +26559,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145fd55f77db4b49b516fa22e1bf783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fightTheme: {fileID: 8300000, guid: 66c6cb9b4b8fc1248be469f6adb5b0e9, type: 3}
-  ambientTheme: {fileID: 8300000, guid: 0655aa6ec1b72e64ab8a938944e583d5, type: 3}
-  isPlayingMusic: 0
-  currentMusicType: 0
+  FightTheme: {fileID: 8300000, guid: 66c6cb9b4b8fc1248be469f6adb5b0e9, type: 3}
+  AmbientTheme: {fileID: 8300000, guid: 0655aa6ec1b72e64ab8a938944e583d5, type: 3}
+  IsPlayingMusic: 0
+  CurrentMusicType: 0
 --- !u!82 &1682236222
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28003,6 +27911,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1813559544, guid: 84220fb20118e274c854d7209cdb9532, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1813559544, guid: 84220fb20118e274c854d7209cdb9532, type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 

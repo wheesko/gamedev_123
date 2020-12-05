@@ -1,46 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
 public class MusicController : MonoBehaviour
 {
+    public static MusicController Instance { get; private set; }
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(this);
+        }
+    }
 
     public enum MusicType {
-        AMBIENT,
-        FIGHT
+        Ambient,
+        Fight,
+        LevelEnd
     };
 
     private AudioSource audioSource;
-    public AudioClip fightTheme; 
-    public AudioClip ambientTheme;
+    public AudioClip FightTheme; 
+    public AudioClip AmbientTheme;
 
-    public bool isPlayingMusic;
+    public bool IsPlayingMusic;
 
-    public MusicType currentMusicType;
+    public MusicType CurrentMusicType;
 
     void Start()
     {
-        isPlayingMusic = true;
-        currentMusicType = MusicType.AMBIENT;
+        IsPlayingMusic = true;
+        CurrentMusicType = MusicType.Ambient;
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = ambientTheme;
-        Play(MusicType.AMBIENT);
+        audioSource.clip = AmbientTheme;
+        Play(MusicType.Ambient);
     }
 
     public void Play(MusicType musicType)
     {
-        isPlayingMusic = true;
+        IsPlayingMusic = true;
         audioSource.Stop();
         switch(musicType)
         {
-            case MusicType.AMBIENT:
-                audioSource.PlayOneShot(ambientTheme, 0.5f);
+            case MusicType.Ambient:
+                audioSource.PlayOneShot(AmbientTheme, 0.20f);
                 break;
-            case MusicType.FIGHT:            
-                audioSource.PlayOneShot(fightTheme, 0.5f);
+            case MusicType.Fight:            
+                audioSource.PlayOneShot(FightTheme, 0.10f);
                 break;
-            default:
+            case MusicType.LevelEnd:
+                Stop(); //TODO: Maybe find a level end song 
                 break;
         }
+    }
+
+    public void Stop()
+    {
+        IsPlayingMusic = false;
+        audioSource.Stop();
     }
 }
