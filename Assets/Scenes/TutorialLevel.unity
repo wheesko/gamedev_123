@@ -10157,31 +10157,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1921273230 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1473623802261784755, guid: d7d5e7757c2bfc54d970a4cff97ba928, type: 3}
-  m_PrefabInstance: {fileID: 1473623801688127673}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1921273234
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921273230}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 59204eea90cfdc4418bded0bef9ed3a6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &1473623801688127673
+--- !u!1001 &2139802776
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10275,22 +10251,6 @@ PrefabInstance:
     - target: {fileID: 1473623801512574117, guid: d7d5e7757c2bfc54d970a4cff97ba928, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473623802261784754, guid: d7d5e7757c2bfc54d970a4cff97ba928, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473623802261784754, guid: d7d5e7757c2bfc54d970a4cff97ba928, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473623802261784754, guid: d7d5e7757c2bfc54d970a4cff97ba928, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473623802261784755, guid: d7d5e7757c2bfc54d970a4cff97ba928, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7d5e7757c2bfc54d970a4cff97ba928, type: 3}
