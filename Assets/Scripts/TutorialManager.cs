@@ -32,14 +32,14 @@ public class TutorialManager : MonoBehaviour
         }
         else if (popUpIndex == 1)
         {
-            if (Input.GetButton("Jump"))
+            if (Input.GetKey(KeyCode.C))
             {
                 popUpIndex++;
             }
         }
         else if (popUpIndex == 2)
         {
-            if (Input.GetKey(KeyCode.C))
+            if (Input.GetButton("Jump"))
             {
                 popUpIndex++;
             }
