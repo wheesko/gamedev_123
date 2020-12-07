@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 struct Cmd
@@ -43,6 +43,11 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 8.0f;
     public bool holdJumpToBhop = false;
     public LayerMask layerMask;
+    
+    /* Player sounds */
+    private AudioSource audioSource;
+    public AudioClip[] JumpSounds;
+    public AudioClip[] HurtSounds;
 
     public GUIStyle style;
 
@@ -100,6 +105,7 @@ public class PlayerController : MonoBehaviour
             transform.position.z);
 
         _controller = GetComponent<CharacterController>();
+        audioSource = GetComponent<AudioSource>();
 
         height = _controller.height;
 
@@ -156,7 +162,10 @@ public class PlayerController : MonoBehaviour
                 _controller.Move(Vector3.down * _controller.height / 2 * 20 * Time.deltaTime);
             }
 
-            if (_controller.isGrounded) isJumping = false;
+            if (_controller.isGrounded)
+            {
+                isJumping = false;
+            }
 
             Vector3 udp = playerVelocity;
             udp.y = 0.0f;
@@ -219,6 +228,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health = Mathf.Clamp(health - damage, 0, 100);
+        audioSource.PlayOneShot(HurtSounds[Random.Range(0, HurtSounds.Length)], 1.0f);
         GameUIController.Instance.SetHealthText(health);
     }
 
@@ -333,6 +343,7 @@ public class PlayerController : MonoBehaviour
     }
     private void QueueJump()
     {
+        
         if (holdJumpToBhop)
         {
             wishJump = Input.GetButton("Jump");
@@ -341,6 +352,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && !wishJump)
         {
+            if(!isJumping) audioSource.PlayOneShot(JumpSounds[Random.Range(0, JumpSounds.Length)]);
             wishJump = true;
             isJumping = true;
         }
