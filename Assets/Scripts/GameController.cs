@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     // Maps the level with the upcoming one
     private Dictionary<string, string> nextLevelsDictionary = new Dictionary<string, string>()
     {
-        { "DemoLevel", "Level1" }
+        { "TutorialLevel", "DemoLevel" }
     };
 
     void Awake()
