@@ -146,7 +146,6 @@ public class PlayerController : MonoBehaviour
 
             this.transform.rotation = Quaternion.Euler(0, rotY, 0);
             playerView.rotation = Quaternion.Euler(rotX, rotY, 0);
-            weaponGameObject.transform.rotation = Quaternion.Euler(rotX, rotY, 0);
 
             Crouch();
             QueueJump();
@@ -201,12 +200,12 @@ public class PlayerController : MonoBehaviour
 
     private void SelectWeaponByIndex(int index)
     {
-        foreach (Transform childObject in weaponGameObject.transform)
+        foreach (Transform childObject in playerView.transform)
         {
             Destroy(childObject.gameObject);
         }
-
-        var instantiatedWeapon = Instantiate(acquiredWeaponList[index], weaponGameObject.transform);
+        
+        var instantiatedWeapon = Instantiate(acquiredWeaponList[index], playerView.transform);
         currentWeapon = instantiatedWeapon.GetComponent<IRangedWeapon>();
         currentWeaponIndex = index;
     }
