@@ -101,7 +101,7 @@ MonoBehaviour:
   lifeTime: 5
   rigidbody: {fileID: 3065943330188218701}
   impactEffect: {fileID: 0}
-  damage: 1
+  damage: 18
   damageEnemy: 1
   damagePlayer: 0
 --- !u!54 &3065943330188218701
@@ -215,7 +215,7 @@ TrailRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 0
+      m_Mode: 1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
@@ -226,7 +226,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
-  m_Emitting: 1
+  m_Emitting: 0
 --- !u!64 &-3557614901345166959
 MeshCollider:
   m_ObjectHideFlags: 0

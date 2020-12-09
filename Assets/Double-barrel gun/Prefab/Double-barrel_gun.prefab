@@ -212,7 +212,7 @@ MonoBehaviour:
   FirePoint: {fileID: 5223369106832419137}
   hitEnemyClip: {fileID: 8300000, guid: 6757024723048f44bbc0de89a1392dd8, type: 3}
   Bullet: {fileID: 2811591864009928183, guid: 57493aba0fe28cd44a322195f4852273, type: 3}
-  Damage: 0
+  Damage: 150
   fireRate: 1.5
 --- !u!82 &757678996199303411
 AudioSource:

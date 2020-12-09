@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb98bb7b530afcd4aa5fe89b18cbcb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
+  currentHealth: 50
 --- !u!114 &1813559544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,10 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2cce17e52e6d04aa6b8fbd03866856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  patrolPoints: []
   currentPatrolPoint: 0
   agent: {fileID: 1813559543}
   animator: {fileID: 9206339766642002178}

@@ -139,8 +139,7 @@ MonoBehaviour:
   FirePoint: {fileID: 0}
   hitEnemyClip: {fileID: 8300000, guid: 6757024723048f44bbc0de89a1392dd8, type: 3}
   Bullet: {fileID: 5356034177990914937, guid: e09b5e30a9d509c4f97ffeabf4cf0562, type: 3}
-  ColissionEffect: {fileID: 0}
-  Damage: 0
+  Damage: 45
   fireRate: 0
 --- !u!1 &989498499327344509
 GameObject:
