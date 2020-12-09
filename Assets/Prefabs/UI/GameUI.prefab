@@ -2345,7 +2345,7 @@ MonoBehaviour:
   SecretsText: {fileID: 466239905}
   GameOverPanel: {fileID: 1183832658}
   ScorePanel: {fileID: 1490634424}
-  LevelCompletePanel: {fileID: 2620483923251683247}
+  LevelCompletePanel: {fileID: 4312707430334338218}
   FinalLevelCompletePanel: {fileID: 2620483923251683247}
 --- !u!1 &7500053008325740488
 GameObject:
