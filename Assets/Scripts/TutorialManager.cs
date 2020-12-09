@@ -11,6 +11,8 @@ public class TutorialManager : MonoBehaviour
 
     public GameObject toriGateTrigger;
 
+    public SushiManager sushiManager;
+
     private int popUpIndex = 0;
 
     private float movementTimer = 2f;
@@ -74,6 +76,17 @@ public class TutorialManager : MonoBehaviour
             }
         }
         else if (popUpIndex == 4)
+        {
+            if (sushiManager.IsSushiEaten())
+            {
+                popUpIndex++;
+            }
+            else
+            {
+                sushiManager.CanEatSushi(true);
+            }
+        }
+        else if (popUpIndex == 5)
         {
             toriGateTrigger.SetActive(true);
         }
