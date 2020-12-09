@@ -17,6 +17,7 @@ public class GameUIController : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject ScorePanel;
     public GameObject LevelCompletePanel;
+    public GameObject FinalLevelCompletePanel;
 
     void Awake()
     {
@@ -42,7 +43,7 @@ public class GameUIController : MonoBehaviour
         AmmoText.text = ammo.ToString();
     }
 
-    public void EndGame(bool isSuccess)
+    public void EndGame(bool isSuccess, bool isFinalLevel)
     {
         TimeText.text = $"{Mathf.Round(LevelManager.LevelTime)} seconds";
         EnemiesText.text = $"{LevelManager.KilledEnemyCount}";
@@ -52,9 +53,16 @@ public class GameUIController : MonoBehaviour
 
         if (isSuccess)
         {
-            LevelCompletePanel.SetActive(true);
+            if (isFinalLevel)
+            {
+                FinalLevelCompletePanel.SetActive(true);
+            }
+            else
+            {
+                LevelCompletePanel.SetActive(true);
+            }
         }
-        else
+        else if(!isFinalLevel)
         {
             GameOverPanel.SetActive(true);
         }
@@ -73,5 +81,10 @@ public class GameUIController : MonoBehaviour
     public void NextLevel()
     {
         GameController.Instance.ProceedToNextLevel();
+    }
+
+    public void Credits()
+    {
+        GameController.Instance.Credits();
     }
 }
