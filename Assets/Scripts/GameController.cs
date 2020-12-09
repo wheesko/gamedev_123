@@ -47,10 +47,9 @@ public class GameController : MonoBehaviour
 
     public void EndGame(bool isSuccess)
     {
-        bool isFinalLevel = !nextLevelsDictionary.ContainsKey(SceneManager.GetActiveScene().name);
         if (!IsGameOver)
         {
-            GameUIController.Instance.EndGame(isSuccess, isFinalLevel);
+            GameUIController.Instance.EndGame(isSuccess);
         }
         IsGameOver = true;
     }
@@ -75,8 +74,4 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void Credits()
-    {
-        SceneManager.LoadScene("Credits");
-    }
 }
