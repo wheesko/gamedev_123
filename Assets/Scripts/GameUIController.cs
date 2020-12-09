@@ -64,4 +64,14 @@ public class GameUIController : MonoBehaviour
     {
         GameController.Instance.Restart();
     }
+
+    public void MainMenu()
+    {
+        GameController.Instance.MainMenu();
+    }
+
+    public void NextLevel()
+    {
+        GameController.Instance.ProceedToNextLevel();
+    }
 }
