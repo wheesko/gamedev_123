@@ -112,8 +112,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.017977528
-        value: 1
+        time: 0.77471924
+        value: 0.9295788
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -125,8 +125,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5849056, g: 0, b: 0.11070342, a: 1}
-      key1: {r: 0.0068084607, g: 0.4811321, b: 0.08847035, a: 1}
+      key0: {r: 0.30588233, g: 1, b: 0.35139588, a: 1}
+      key1: {r: 0.8773585, g: 0.17840299, b: 0, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -153,10 +153,10 @@ LineRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
-    numCapVertices: 5
+    numCapVertices: 0
     alignment: 0
     textureMode: 0
-    shadowBias: 0.5
+    shadowBias: 0
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
