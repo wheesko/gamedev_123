@@ -32,146 +32,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebbe71af-ecdc-46fa-8adb-9081de762f5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Fabric.Core.Editor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Fabric.Core.Editor.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/FabricPoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/FabricPoint.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/FabricPoint_Locked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/FabricPoint_Locked.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/FabricPoint_Selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/FabricPoint_Selected.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/AudioComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/AudioComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/AudioComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/AudioComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/BlendComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/BlendComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/BlendComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/BlendComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/DialogAudioComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/DialogAudioComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/DialogAudioComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/DialogAudioComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorAdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorAdd.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorAddFree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorAddFree.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorDelete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorDelete.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorDeleteFree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/EventEditorDeleteFree.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/GroupComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/GroupComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/GroupComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/GroupComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MicAudioComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MicAudioComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MicAudioComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MicAudioComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MusicComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MusicComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MusicComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/MusicComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/RandomComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/RandomComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/RandomComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/RandomComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SamplePlayerComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SamplePlayerComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SamplePlayerComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SamplePlayerComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SequenceComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SequenceComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SequenceComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SequenceComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SwitchComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SwitchComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SwitchComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/SwitchComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/WwwAudioComponent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/WwwAudioComponent.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/WwwAudioComponentActive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/Images/Icons/WwwAudioComponentActive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/ProjectData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/ProjectData/PersistentData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Editor/ProjectData/PersistentData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Fabric Player Licence Agreement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Fabric Player Licence Agreement.pdf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Fabric.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Fabric.Core.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Fabric/Readme.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/PlazmaAWP/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/PlazmaAWP/Materials/Sci-Fi Rifle.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/PlazmaAWP/Materials/Sci-Fi Rifle.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 10.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 10.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 11.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 11.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 5.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 6.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 7.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 8.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 8.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 9.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Hit &amp; Damage 9.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 1.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 1.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 10.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 10.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 11.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 11.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 12.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 12.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 2.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 2.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 3.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 3.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 4.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 4.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 5.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 5.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 6.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 6.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 7.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 7.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 8.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 8.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 9.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/effects/player/Attack Jump &amp; Hit Damage Human Sounds/Jump &amp; Attack 9.wav.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorContoller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorContoller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/LevelEndTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/LevelEndTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayFightTheme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayFightTheme.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PlazmaAWP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PlazmaAWP.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,6 +45,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFC774E3-9F15-4E8B-ACC0-AAE5397B53AE/55/c6f96553/Bounds.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BFC774E3-9F15-4E8B-ACC0-AAE5397B53AE/4e/0b0cc5d4/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7597B2C7-34E6-4288-9083-819DF22DA57C/86/3fc476fd/ParticlePhysicsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7597B2C7-34E6-4288-9083-819DF22DA57C/b8/daaa672e/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ShotgunDamage.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -189,8 +59,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DoorContoller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelEndTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" />
+        <option value="$PROJECT_DIR$/Assets/ShotgunDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -236,7 +109,9 @@
       <updated>1605769765455</updated>
       <workItem from="1605769771631" duration="1515000" />
       <workItem from="1607177823194" duration="3767000" />
-      <workItem from="1607347369059" duration="753000" />
+      <workItem from="1607347369059" duration="7030000" />
+      <workItem from="1607442068060" duration="4472000" />
+      <workItem from="1607515414932" duration="1136000" />
     </task>
     <servers />
   </component>
@@ -255,6 +130,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

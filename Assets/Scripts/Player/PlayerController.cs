@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     public Transform playerView;
+    public Transform weaponView;
     public GameObject Shuriken;
     public float playerViewYOffset = 0.6f;
     public float xMouseSensitivity = 30.0f;
@@ -96,10 +97,22 @@ public class PlayerController : MonoBehaviour
             if (mainCamera != null)
                 playerView = mainCamera.gameObject.transform;
         }
+        
+        if (weaponView == null)
+        {
+            Camera weaponCamera = GameObject.FindWithTag("WeaponView").GetComponent<Camera>();
+            if (weaponCamera != null)
+                weaponView = weaponCamera.gameObject.transform;
+        }
 
         weaponGameObject = GameObject.FindGameObjectWithTag("Weapon");
 
         playerView.position = new Vector3(
+            transform.position.x,
+            transform.position.y + playerViewYOffset,
+            transform.position.z);
+        
+        weaponView.position = new Vector3(
             transform.position.x,
             transform.position.y + playerViewYOffset,
             transform.position.z);
@@ -146,7 +159,8 @@ public class PlayerController : MonoBehaviour
 
             this.transform.rotation = Quaternion.Euler(0, rotY, 0);
             playerView.rotation = Quaternion.Euler(rotX, rotY, 0);
-            weaponGameObject.transform.rotation = Quaternion.Euler(rotX, rotY, 0);
+            weaponView.rotation = Quaternion.Euler(rotX, rotY, 0);
+
 
             Crouch();
             QueueJump();
@@ -176,6 +190,10 @@ public class PlayerController : MonoBehaviour
                 transform.position.x,
                 transform.position.y + playerViewYOffset,
                 transform.position.z);
+            weaponView.position = new Vector3(
+                transform.position.x,
+                transform.position.y + playerViewYOffset,
+                transform.position.z);
         }
         else
         {
@@ -201,12 +219,12 @@ public class PlayerController : MonoBehaviour
 
     private void SelectWeaponByIndex(int index)
     {
-        foreach (Transform childObject in weaponGameObject.transform)
+        foreach (Transform childObject in playerView.transform)
         {
             Destroy(childObject.gameObject);
         }
-
-        var instantiatedWeapon = Instantiate(acquiredWeaponList[index], weaponGameObject.transform);
+        
+        var instantiatedWeapon = Instantiate(acquiredWeaponList[index], playerView.transform);
         currentWeapon = instantiatedWeapon.GetComponent<IRangedWeapon>();
         currentWeaponIndex = index;
     }
