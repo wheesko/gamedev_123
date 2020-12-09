@@ -5,6 +5,10 @@ using UnityEngine;
 public class ArenaTriggerController : MonoBehaviour
 {
     public GameObject ArenaTrapDoor;
+
+    [SerializeField]
+    private GameObject Arena;
+
     private bool arenaTriggered = false;
     private void OnTriggerEnter(Collider other)
     {
@@ -12,6 +16,14 @@ public class ArenaTriggerController : MonoBehaviour
         {
             ArenaTrapDoor.SetActive(true);
             arenaTriggered = true;
+
+            foreach(Transform child in Arena.transform)
+            { 
+                if(child.gameObject.CompareTag("Enemy"))
+                {
+                    child.gameObject.SetActive(true);
+                }
+            }
         }
     }
 }
