@@ -21,5 +21,5 @@ public class ControlledDoorScript : MonoBehaviour
             Door.transform.position -= new Vector3(0f, 3.9f, 0f);
             needsToOpen = false;
         }
-    }
+    }   
 }

@@ -12,6 +12,7 @@ public class SuperShotgun : MonoBehaviour, IRangedWeapon
 
     void Start()
     {
+        Debug.Log(transform.position);
         nextFire = Time.time;
         audioSource = GetComponent<AudioSource>();
     }

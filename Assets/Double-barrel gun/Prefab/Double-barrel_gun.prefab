@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4824459603947356}
   - component: {fileID: 33426222018893206}
   - component: {fileID: 23396921308453042}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: double_barreled_gun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4719304394238986}
   - component: {fileID: 33449941745009778}
   - component: {fileID: 23506569173467464}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: double_barreled_gun1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 4781552677805482}
   - component: {fileID: 1000680735333810249}
   - component: {fileID: 757678996199303411}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Double-barrel_gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ MonoBehaviour:
   FirePoint: {fileID: 5223369106832419137}
   hitEnemyClip: {fileID: 8300000, guid: 6757024723048f44bbc0de89a1392dd8, type: 3}
   Bullet: {fileID: 2811591864009928183, guid: 57493aba0fe28cd44a322195f4852273, type: 3}
-  Damage: 0
+  Damage: 150
   fireRate: 1.5
 --- !u!82 &757678996199303411
 AudioSource:
@@ -319,7 +319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5223369106832419137}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

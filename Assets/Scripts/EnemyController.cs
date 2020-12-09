@@ -58,8 +58,11 @@ public class EnemyController : MonoBehaviour
                 }
                 else
                 {
-                    currentState = AIState.isPatrolling;
-                    agent.SetDestination(patrolPoints[currentPatrolPoint].position);
+                    if (patrolPoints.Length != 0)
+                    {
+                        currentState = AIState.isPatrolling;
+                        agent.SetDestination(patrolPoints[currentPatrolPoint].position);
+                    }
                 }
 
                 if (distanceToPlayer <= chaseRange)
