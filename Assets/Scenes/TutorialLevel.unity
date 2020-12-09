@@ -2773,9 +2773,13 @@ PrefabInstance:
     - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
       propertyPath: firePoint
       value: 
-      objectReference: {fileID: 1952220874}
+      objectReference: {fileID: 0}
     - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
       propertyPath: playerView
+      value: 
+      objectReference: {fileID: 1628883837}
+    - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
+      propertyPath: weaponView
       value: 
       objectReference: {fileID: 1628883837}
     - target: {fileID: 2687880596028676641, guid: ced08cb4518c894459ce717861cd622f, type: 3}
@@ -11137,11 +11141,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &1952220874 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6831617232407861026, guid: ced08cb4518c894459ce717861cd622f, type: 3}
-  m_PrefabInstance: {fileID: 1408899350}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1962917443
 Mesh:
   m_ObjectHideFlags: 0
