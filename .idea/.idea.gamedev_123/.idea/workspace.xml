@@ -32,17 +32,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebbe71af-ecdc-46fa-8adb-9081de762f5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullets/Laser/LaserMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullets/Laser/LaserMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullets/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullets/Laser.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hell Knight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hell Knight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PlazmaAWP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PlazmaAWP.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +61,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs" />
         <option value="$PROJECT_DIR$/Assets/ShotgunDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -118,6 +111,7 @@
       <workItem from="1607177823194" duration="3767000" />
       <workItem from="1607347369059" duration="7030000" />
       <workItem from="1607442068060" duration="4472000" />
+      <workItem from="1607515414932" duration="1136000" />
     </task>
     <servers />
   </component>
