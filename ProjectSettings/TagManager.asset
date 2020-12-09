@@ -8,6 +8,8 @@ TagManager:
   - Secret
   - Bullet
   - MusicTrigger
+  - Weapon
+  - WeaponView
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Ground
   - Player
   - Platform
-  - 
+  - Weapon
   - 
   - 
   - 
