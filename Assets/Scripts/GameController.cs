@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     // Maps the level with the upcoming one
     private Dictionary<string, string> nextLevelsDictionary = new Dictionary<string, string>()
     {
-        { "DemoLevel", "Level1" }
+        { "TutorialLevel", "DemoLevel" }
     };
 
     void Awake()
@@ -47,9 +47,10 @@ public class GameController : MonoBehaviour
 
     public void EndGame(bool isSuccess)
     {
+        bool isFinalLevel = !nextLevelsDictionary.ContainsKey(SceneManager.GetActiveScene().name);
         if (!IsGameOver)
         {
-            GameUIController.Instance.EndGame(isSuccess);
+            GameUIController.Instance.EndGame(isSuccess, isFinalLevel);
         }
         IsGameOver = true;
     }
@@ -74,4 +75,8 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
