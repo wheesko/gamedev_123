@@ -1780,6 +1780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1834,6 +1838,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4091,6 +4099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -4145,6 +4157,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10602,6 +10618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -10656,6 +10676,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12236,6 +12260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -12290,6 +12318,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12446,6 +12478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -12500,6 +12536,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13688,6 +13728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -13742,6 +13786,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14015,6 +14063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -14069,6 +14121,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -33845,6 +33901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -33899,6 +33959,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -34232,7 +34296,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25110
+  m_Name: pb_Mesh26666
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40556,6 +40620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -40612,6 +40680,10 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
 --- !u!1 &1063984545 stripped
@@ -40648,6 +40720,10 @@ PrefabInstance:
     - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_Name
       value: hellhound (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
@@ -40703,6 +40779,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -41288,6 +41368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -41342,6 +41426,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -52566,6 +52654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -52620,6 +52712,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -53151,6 +53247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -53205,6 +53305,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -55312,6 +55416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -55366,6 +55474,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -70777,6 +70889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -70831,6 +70947,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -70945,6 +71065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -70999,6 +71123,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -71391,6 +71519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -71445,6 +71577,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -71705,6 +71841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hellhound (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -71755,6 +71895,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440889340, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
       propertyPath: patrolPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192283961, guid: c94844ca8b768456b9d85ec95e95511f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
