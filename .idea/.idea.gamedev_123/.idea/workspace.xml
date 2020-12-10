@@ -32,16 +32,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebbe71af-ecdc-46fa-8adb-9081de762f5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bullets/Laser/LaserMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bullets/Laser/LaserMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullets/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullets/Laser.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hell Knight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hell Knight.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PlazmaAWP.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PlazmaAWP.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,12 +60,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DoorContoller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelEndTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs" />
         <option value="$PROJECT_DIR$/Assets/ShotgunDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +82,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop\gamedev_123.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Vytautas\Desktop" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -118,6 +121,7 @@
       <workItem from="1607177823194" duration="3767000" />
       <workItem from="1607347369059" duration="7030000" />
       <workItem from="1607442068060" duration="3663000" />
+      <workItem from="1607585231323" duration="10000" />
     </task>
     <servers />
   </component>

@@ -47,7 +47,7 @@ public class MusicController : MonoBehaviour
                 audioSource.PlayOneShot(AmbientTheme, 0.20f);
                 break;
             case MusicType.Fight:            
-                audioSource.PlayOneShot(FightTheme, 0.10f);
+                audioSource.PlayOneShot(FightTheme, 0.20f);
                 break;
             case MusicType.LevelEnd:
                 Stop(); //TODO: Maybe find a level end song 
