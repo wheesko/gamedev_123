@@ -100,17 +100,19 @@ public class PlayerController : MonoBehaviour
         
         if (weaponView == null)
         {
-            Camera weaponCamera = GameObject.FindWithTag("WeaponView").GetComponent<Camera>();
+            Camera weaponCamera = GameObject.FindGameObjectWithTag("WeaponView").GetComponent<Camera>();
             if (weaponCamera != null)
                 weaponView = weaponCamera.gameObject.transform;
         }
 
         weaponGameObject = GameObject.FindGameObjectWithTag("Weapon");
+        
 
         playerView.position = new Vector3(
             transform.position.x,
             transform.position.y + playerViewYOffset,
             transform.position.z);
+        
         
         weaponView.position = new Vector3(
             transform.position.x,
@@ -161,6 +163,7 @@ public class PlayerController : MonoBehaviour
             playerView.rotation = Quaternion.Euler(rotX, rotY, 0);
             weaponView.rotation = Quaternion.Euler(rotX, rotY, 0);
 
+            //weaponGameObject.transform.rotation = Quaternion.Euler(rotX, rotY, 0);
 
             Crouch();
             QueueJump();

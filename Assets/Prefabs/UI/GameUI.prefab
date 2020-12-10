@@ -446,7 +446,7 @@ RectTransform:
   m_Children:
   - {fileID: 268967641}
   m_Father: {fileID: 7441606575582623123}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -701,7 +701,7 @@ RectTransform:
   - {fileID: 1845288705}
   - {fileID: 1793168860}
   m_Father: {fileID: 7441606575582623123}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -780,7 +780,7 @@ RectTransform:
   - {fileID: 409961017}
   - {fileID: 257737098}
   m_Father: {fileID: 7441606575582623123}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1463,7 +1463,7 @@ RectTransform:
   - {fileID: 9196864003699307140}
   - {fileID: 3203676266541217784}
   m_Father: {fileID: 7441606575582623123}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1755,7 +1755,7 @@ RectTransform:
   - {fileID: 7665941719432068924}
   - {fileID: 8170691861726038825}
   m_Father: {fileID: 7441606575582623123}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1832,7 +1832,7 @@ RectTransform:
   - {fileID: 5935526001932793111}
   - {fileID: 2777970900574027516}
   m_Father: {fileID: 7441606575582623123}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2156,7 +2156,7 @@ RectTransform:
   m_Children:
   - {fileID: 2045748400}
   m_Father: {fileID: 7441606575582623123}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2251,13 +2251,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 6196838133641004399}
   - {fileID: 7441606574476825726}
   - {fileID: 515527956}
   - {fileID: 1183832659}
   - {fileID: 3116306643038019728}
   - {fileID: 386322344155381053}
   - {fileID: 1490634425}
-  - {fileID: 6196838133641004399}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2345,8 +2345,8 @@ MonoBehaviour:
   SecretsText: {fileID: 466239905}
   GameOverPanel: {fileID: 1183832658}
   ScorePanel: {fileID: 1490634424}
-  LevelCompletePanel: {fileID: 2620483923251683247}
-  FinalLevelCompletePanel: {fileID: 0}
+  LevelCompletePanel: {fileID: 4312707430334338218}
+  FinalLevelCompletePanel: {fileID: 2620483923251683247}
 --- !u!1 &7500053008325740488
 GameObject:
   m_ObjectHideFlags: 0

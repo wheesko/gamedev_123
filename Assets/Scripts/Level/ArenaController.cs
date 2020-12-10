@@ -53,6 +53,7 @@ public class ArenaController : MonoBehaviour
             if (child.CompareTag("Enemy"))
             {
                 enemies.Add(child.gameObject);
+                child.gameObject.SetActive(false);
             }
         }
 

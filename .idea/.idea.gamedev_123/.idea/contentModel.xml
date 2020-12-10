@@ -11,22 +11,29 @@
             <e p="Standard_Two_Sided .shader" t="Include" />
           </e>
         </e>
+        <e p="Dynamic Flickering Light" t="Include">
+          <e p="FlickeringLight.cs" t="Include" />
+          <e p="Readme.txt" t="Include" />
+        </e>
         <e p="Fabric" t="Include">
           <e p="Readme.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="ArenaTriggerController.cs" t="Include" />
           <e p="Bullets" t="Include">
             <e p="LaserBulletController.cs" t="Include" />
           </e>
           <e p="ButtonController.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="ControlledDoorScript.cs" t="Include" />
+          <e p="CreditsController.cs" t="Include" />
           <e p="DoorContoller.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
           <e p="EnemyHealthController.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="GameUIController.cs" t="Include" />
           <e p="Gun.cs" t="Include" />
+          <e p="HellHoundHealthController.cs" t="Include" />
           <e p="Level" t="Include">
             <e p="ArenaController.cs" t="Include" />
             <e p="LevelEndTrigger.cs" t="Include" />
@@ -43,6 +50,8 @@
           <e p="PlayerHealthController.cs" t="Include" />
           <e p="PlayFightTheme.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
+          <e p="TutorialGateTrigger.cs" t="Include" />
+          <e p="TutorialManager.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="IRangedWeapon.cs" t="Include" />
             <e p="PlazmaAWP.cs" t="Include" />
@@ -55,6 +64,34 @@
           <e p="LaserShader.shader" t="Include" />
         </e>
         <e p="ShotgunDamage.cs" t="Include" />
+        <e p="SushiManager.cs" t="Include" />
+        <e p="Ultimate 10 Plus Shaders" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="U10PS_DissolveOverTime.cs" t="Include" />
+            <e p="U10PS_ExampleReview.cs" t="Include" />
+            <e p="U10PS_MouseRotation.cs" t="Include" />
+            <e p="U10PS_SnowOverTime.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Blur.shader" t="Include" />
+            <e p="Depth Mask Edge Detection.shader" t="Include" />
+            <e p="Dissolve.shader" t="Include" />
+            <e p="Edge Detection.shader" t="Include" />
+            <e p="Force Field.shader" t="Include" />
+            <e p="Grass Sway.shader" t="Include" />
+            <e p="Lava3D.shader" t="Include" />
+            <e p="Ocean.shader" t="Include" />
+            <e p="Outline.shader" t="Include" />
+            <e p="Plasma.shader" t="Include" />
+            <e p="Plexus" t="Include">
+              <e p="Plexus Line.shader" t="Include" />
+              <e p="Plexus.compute" t="Include" />
+              <e p="Plexus.cs" t="Include" />
+            </e>
+            <e p="Simple Sine Wave.shader" t="Include" />
+            <e p="Snow.shader" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="gamedev_123.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

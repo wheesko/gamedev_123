@@ -62,7 +62,7 @@ public class GameUIController : MonoBehaviour
                 LevelCompletePanel.SetActive(true);
             }
         }
-        else if(!isFinalLevel)
+        else
         {
             GameOverPanel.SetActive(true);
         }
