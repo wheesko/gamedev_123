@@ -33,10 +33,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ebbe71af-ecdc-46fa-8adb-9081de762f5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamedev_123/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Double-barrel gun/Prefab/Double-barrel_gun.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +61,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Level/LevelEndTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/PlazmaAWP.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/SuperShotgun.cs" />
         <option value="$PROJECT_DIR$/Assets/ShotgunDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +120,7 @@
       <workItem from="1607177823194" duration="3767000" />
       <workItem from="1607347369059" duration="7030000" />
       <workItem from="1607442068060" duration="3663000" />
-      <workItem from="1607585231323" duration="10000" />
+      <workItem from="1607585231323" duration="1718000" />
     </task>
     <servers />
   </component>
